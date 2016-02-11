@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANPG | Automatisk Nummerpladegenkendelse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="leaflet.css" />
+	<meta charset="utf-8">
+	<script src="app.js"></script>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: Helvetica, sans-serif;
+		}
+		html, body, #map {
+			height: 100%;
+		}
+
+		#info {
+			position: absolute;
+			z-index: 2000;
+			width: 100%;
+			height: 100%;
+			cursor: not-allowed;
+		}
+		#infobox {
+		    background-color: #222;
+		    margin: 15% auto;
+		    max-width: 505px; 
+		    width: 80%;
+		    border-radius: 10px;
+		    cursor: pointer;
+		}
+
+		#infobox img {
+			max-width: 505px; 
+		    width: 100%;
+		}
+
+		p {
+			padding: 20px;
+			color: #ccc;
+			font-size: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="info">
+		<div id="infobox">
+			<p style="text-align: center; font-size: 25px; padding-bottom: 5px">
+				<i>Have you seen me?</i>
+			</p>
+			<img src="anpg.jpg">
+			<p style="padding-top: 0px">
+				Rigspolitiet monterer i øjeblikket faste kameraer til automatisk nummerpladegenkendelse (ANPG) ved trafikknudepunkter og grænseovergange.
+				Kameraerne kan genkendes på den hvide flade kasse, med to linser og infrarøde lysdioder imellem.
+			</p>
+			<p style="padding-top: 0px">Finder du sådan et, send det venligst til 
+				<a style="color: white" href="https://christian.panton.org/pages/contact.html">@christianpanton</a>
+			</p>
+
+		</div>
+	</div>
+	<div id="map"></div>
+
+	<script>
+		var layer = new L.StamenTileLayer("toner");
+		layer.setUrl("https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png");
+		var map = new L.Map("map", {
+		    center: new L.LatLng(56, 10),
+		    zoom: 7
+		});
+		map.addLayer(layer);	
+		var icon = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		$.getJSON("data.json", function(data){
+			for(var i = 0; i < data.elements.length; i++){
+				var el = data.elements[i];
+				marker = new L.marker([el.lat, el.lon], {icon: icon}).addTo(map);
+			}
+		});
+
+		var hide = function(){
+				$("#info").hide();
+		};
+
+		$(function(){
+			$("#infobox").click(hide);
+			$("#info").click(hide);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<osm-script output="json">
+  <query type="area" into="boundryarea">
+    <has-kv k="boundary" v="administrative"/>
+    <has-kv k="admin_level" v="2"/>
+    <has-kv k="name" v="Danmark"/>
+       <has-kv k="type" v="boundary"/>
+  </query>
+  <union>
+    <query type="node">
+      <area-query from="boundryarea" />
+      <has-kv k="surveillance:type" v="ALPR"/>
+    </query>
+  </union>
+  <print mode="body"/>
+  <recurse type="down"/>
+  <print mode="skeleton"/>
+</osm-script>
