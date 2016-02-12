@@ -8,6 +8,7 @@
   <union>
     <query type="node">
       <area-query from="boundryarea" />
+      <has-kv k="operator" v="Rigspolitiet"/>
       <has-kv k="surveillance:type" v="ALPR"/>
     </query>
   </union>
