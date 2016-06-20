@@ -73,11 +73,31 @@
 		});
 		map.addLayer(layer);	
 		var icon = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		var icon_unknown = L.MakiMarkers.icon({icon: "star", color: "#666", size: "s"});
+
 		$.getJSON("data.json", function(data){
 			for(var i = 0; i < data.elements.length; i++){
 				var el = data.elements[i];
-				marker = new L.marker([el.lat, el.lon], {icon: icon}).addTo(map);
+				if(el.tags.operator == "Rigspolitiet"){
+					new L.marker([el.lat, el.lon], {icon: icon, title: "Rigspolitiets ANPG"}).addTo(map);
+				}else{
+					new L.marker([el.lat, el.lon], {icon: icon_unknown, title: "Ubekræftet eller ikke politiets APNG"}).addTo(map);
+				}
+				
 			}
+		});
+
+		var myStyle = {
+		    "color": "red",
+		    "weight": 1,
+		    "opacity": 0.65,
+		    "fillOpacity": 0
+		};
+
+	
+
+		$.getJSON("kredse.json", function(data) {
+			L.geoJson(data, {style: myStyle}).addTo(map);
 		});
 
 		var hide = function(){

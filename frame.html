@@ -31,12 +31,20 @@
 		});
 		map.addLayer(layer);	
 		var icon = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		var icon_unknown = L.MakiMarkers.icon({icon: "star", color: "#633", size: "s"});
+
 		$.getJSON("data.json", function(data){
 			for(var i = 0; i < data.elements.length; i++){
 				var el = data.elements[i];
-				marker = new L.marker([el.lat, el.lon], {icon: icon}).addTo(map);
+				if(el.tags.operator == "Rigspolitiet"){
+					new L.marker([el.lat, el.lon], {icon: icon}).addTo(map);
+				}else{
+					//new L.marker([el.lat, el.lon], {icon: icon_unknown}).addTo(map);
+				}
+				
 			}
 		});
+
 	</script>
 </body>
 </html>
