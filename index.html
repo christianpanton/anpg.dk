@@ -73,15 +73,21 @@
 		});
 		map.addLayer(layer);	
 		var icon = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		var icon_notactive = L.MakiMarkers.icon({icon: "police", color: "#666", size: "s"});
+
 		var icon_unknown = L.MakiMarkers.icon({icon: "star", color: "#666", size: "s"});
 
 		$.getJSON("data.json", function(data){
 			for(var i = 0; i < data.elements.length; i++){
 				var el = data.elements[i];
 				if(el.tags.operator == "Rigspolitiet"){
-					new L.marker([el.lat, el.lon], {icon: icon, title: "Rigspolitiets ANPG"}).addTo(map);
+					if(el.tags.active == "no"){
+						new L.marker([el.lat, el.lon], {icon: icon_notactive, title: "Rigspolitiets ANPG (nedtaget)"}).addTo(map);
+					}else{
+						new L.marker([el.lat, el.lon], {icon: icon, title: "Rigspolitiets ANPG"}).addTo(map);
+					}
 				}else{
-					new L.marker([el.lat, el.lon], {icon: icon_unknown, title: "Ubekræftet eller ikke politiets APNG"}).addTo(map);
+					//new L.marker([el.lat, el.lon], {icon: icon_unknown, title: "Ubekræftet eller ikke politiets ANPG"}).addTo(map);
 				}
 				
 			}
