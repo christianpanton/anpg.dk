@@ -16,7 +16,8 @@
 			height: 100%;
 		}
 
-		#info {
+		#info { 
+                        display: none;
 			position: absolute;
 			z-index: 2000;
 			width: 100%;
@@ -72,20 +73,30 @@
 		    zoom: 7
 		});
 		map.addLayer(layer);	
-		var icon = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
-		var icon_notactive = L.MakiMarkers.icon({icon: "police", color: "#666", size: "s"});
+		var icon_anpg = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		var icon_anpg_notactive = L.MakiMarkers.icon({icon: "police", color: "#666", size: "s"});
+		var icon_miljo = L.MakiMarkers.icon({icon: "park", color: "#cf0", size: "m"});
+		var icon_miljo_notactive = L.MakiMarkers.icon({icon: "park", color: "#666", size: "s"});
 
 		var icon_unknown = L.MakiMarkers.icon({icon: "star", color: "#666", size: "s"});
 
-		$.getJSON("data.json", function(data){
+		$.getJSON("data.json?" + (new Date).getTime(), function(data){
 			for(var i = 0; i < data.elements.length; i++){
 				var el = data.elements[i];
 				if(el.tags.operator == "Rigspolitiet"){
 					if(el.tags.active == "no"){
-						new L.marker([el.lat, el.lon], {icon: icon_notactive, title: "Rigspolitiets ANPG (nedtaget)"}).addTo(map);
+						new L.marker([el.lat, el.lon], {icon: icon_anpg_notactive, title: "Rigspolitiets ANPG (nedtaget)"}).addTo(map);
 					}else{
-						new L.marker([el.lat, el.lon], {icon: icon, title: "Rigspolitiets ANPG"}).addTo(map);
+						new L.marker([el.lat, el.lon], {icon: icon_anpg, title: "Rigspolitiets ANPG"}).addTo(map);
 					}
+				}
+				if(el.tags.operator == "Sund & Bælt"){
+					if(el.tags.active == "no"){
+						new L.marker([el.lat, el.lon], {icon: icon_miljo_notactive, title: "Sund & Bælt Holding ANPR (miljøzone, nedtaget)"}).addTo(map);
+					}else{
+						new L.marker([el.lat, el.lon], {icon: icon_miljo, title: "Sund & Bælt Holding ANPR (miljøzone)"}).addTo(map);
+					}
+				
 				}else{
 					//new L.marker([el.lat, el.lon], {icon: icon_unknown, title: "Ubekræftet eller ikke politiets ANPG"}).addTo(map);
 				}
@@ -110,10 +121,10 @@
 				$("#info").hide();
 		};
 
-		$(function(){
-			$("#infobox").click(hide);
-			$("#info").click(hide);
-		});
+		//$(function(){
+		//	$("#infobox").click(hide);
+		//	$("#info").click(hide);
+		//});
 	</script>
 </body>
 </html>
