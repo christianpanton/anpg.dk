@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: recon
-      run: |
-        ls -all
-        pwd
     - name: wget
       run: wget --post-file=query.xml -O data.json http://overpass-api.de/api/interpreter
     - name: commit
