@@ -1,0 +1,21 @@
+name: Update from Overpass API
+
+on:
+  schedule:
+    - cron:  '12 9 * * *'
+
+jobs:
+  overpass-update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: wget
+      uses: wei/wget@v1
+      with:
+        args: --post-file=query.xml -O data.json http://overpass-api.de/api/interpreter
+    - uses: actions/checkout@v2
+    - name: commit
+      run: |
+          git config --global user.name 'Christian Panton (bot)'
+          git config --global user.email 'christianpanton@users.noreply.github.com'
+          git commit -am "Update from Overpass API"
+          git push
