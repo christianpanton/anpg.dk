@@ -1,8 +1,6 @@
 name: Update from Overpass API
 
-on:
-  schedule:
-    - cron:  '12 9 * * *'
+on: [workflow_dispatch]
 
 jobs:
   overpass-update:
