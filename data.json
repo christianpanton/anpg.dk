@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.56.6 474850e8",
   "osm3s": {
-    "timestamp_osm_base": "2020-10-05T20:14:02Z",
+    "timestamp_osm_base": "2020-10-05T20:36:02Z",
     "timestamp_areas_base": "2020-10-05T19:41:02Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
@@ -1245,8 +1245,8 @@
 {
   "type": "node",
   "id": 7978635303,
-  "lat": 55.4209543,
-  "lon": 10.3818594,
+  "lat": 55.4197502,
+  "lon": 10.3816008,
   "tags": {
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
@@ -1299,6 +1299,32 @@
   "id": 7978668774,
   "lat": 56.1456849,
   "lon": 10.1926873,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978702009,
+  "lat": 55.3987738,
+  "lon": 10.3662594,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978702622,
+  "lat": 55.3932390,
+  "lon": 10.4168105,
   "tags": {
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
