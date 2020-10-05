@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.56.6 474850e8",
   "osm3s": {
-    "timestamp_osm_base": "2020-10-05T19:53:02Z",
+    "timestamp_osm_base": "2020-10-05T20:14:02Z",
     "timestamp_areas_base": "2020-10-05T19:41:02Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
@@ -1221,6 +1221,84 @@
   "id": 7978531640,
   "lat": 55.7066435,
   "lon": 12.5169468,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978621438,
+  "lat": 56.1499893,
+  "lon": 10.2098789,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978635303,
+  "lat": 55.4209543,
+  "lon": 10.3818594,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978649198,
+  "lat": 57.0387855,
+  "lon": 9.9317020,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978655634,
+  "lat": 56.1563708,
+  "lon": 10.1859824,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978663303,
+  "lat": 57.0468843,
+  "lon": 9.9398647,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7978668774,
+  "lat": 56.1456849,
+  "lon": 10.1926873,
   "tags": {
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
