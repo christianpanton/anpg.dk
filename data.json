@@ -1,9 +1,9 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.56.3 eb200aeb",
+  "generator": "Overpass API 0.7.56.6 474850e8",
   "osm3s": {
-    "timestamp_osm_base": "2020-07-04T18:42:02Z",
-    "timestamp_areas_base": "2020-07-04T18:30:03Z",
+    "timestamp_osm_base": "2020-10-05T18:50:02Z",
+    "timestamp_areas_base": "2020-10-05T18:35:02Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -18,6 +18,7 @@
     "image": "https://pbs.twimg.com/media/CZJhpFuUsAAV5qO.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -26,11 +27,12 @@
 {
   "type": "node",
   "id": 3957330668,
-  "lat": 55.6208338,
-  "lon": 12.5294148,
+  "lat": 55.6153312,
+  "lon": 12.5220338,
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -44,6 +46,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -57,6 +60,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -70,6 +74,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -83,6 +88,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -96,6 +102,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -109,6 +116,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -122,6 +130,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -136,6 +145,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/wwKJwsOZHJvYyEIJCq1igw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -150,6 +160,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/psokXihTpqnUdKjw9EZqIw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -164,6 +175,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/psokXihTpqnUdKjw9EZqIw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -177,6 +189,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -190,6 +203,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -204,6 +218,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/pzoed57mFxd-SJBnfs_Owg/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -218,6 +233,7 @@
     "image": "https://pbs.twimg.com/media/CbLuLptXIAE93tY.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -231,6 +247,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -244,6 +261,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -257,6 +275,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -270,6 +289,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -284,6 +304,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/DFvmtLZ6Wv0jlxVAxHB_NA/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -298,6 +319,7 @@
     "active": "no",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -322,6 +344,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -336,6 +359,7 @@
     "image": "https://pbs.twimg.com/media/CbLuLptXIAE93tY.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -350,6 +374,7 @@
     "image": "https://pbs.twimg.com/media/CbVWllKUAAcyYjY.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -364,6 +389,7 @@
     "image": "https://pbs.twimg.com/media/CbVWph_UcAAfYf2.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -378,6 +404,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/H5a_tWfDfy_pahFHyQmktw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -392,6 +419,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/H5a_tWfDfy_pahFHyQmktw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -407,6 +435,7 @@
     "image": "https://pbs.twimg.com/media/ChE7F2eWIAA2FPf.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -420,6 +449,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -433,6 +463,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -447,6 +478,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/-BmpQPfw4A2e7cGdrTPEtQ/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -461,6 +493,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/-BmpQPfw4A2e7cGdrTPEtQ/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -475,6 +508,7 @@
     "image": "https://d1cuyjsrcm0gby.cloudfront.net/FOvxQ4KCQOi4KR02s5nmpw/thumb-2048.jpg",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -490,6 +524,7 @@
     "image": "https://pbs.twimg.com/media/ChE7F2eWIAA2FPf.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -505,6 +540,7 @@
     "image": "https://pbs.twimg.com/media/ChE7F2eWIAA2FPf.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -520,6 +556,7 @@
     "image": "https://pbs.twimg.com/media/ChE7F2eWIAA2FPf.jpg:large",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -533,6 +570,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -546,6 +584,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -559,6 +598,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -572,6 +612,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -585,6 +626,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -598,6 +640,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -611,6 +654,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -624,6 +668,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -637,6 +682,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -650,6 +696,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -664,6 +711,7 @@
     "man_made": "surveillance",
     "mapillary": "BPNkWY-UrF991WU0aIGNwQ",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -678,6 +726,7 @@
     "man_made": "surveillance",
     "mapillary": "rtAwtASOBQzhH3Rhue8yEQ",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -691,6 +740,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -704,6 +754,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -717,6 +768,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -730,6 +782,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -743,6 +796,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -756,6 +810,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -769,6 +824,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -782,6 +838,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -795,6 +852,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -808,6 +866,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -821,6 +880,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -834,6 +894,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -847,6 +908,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -860,6 +922,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -873,6 +936,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -886,6 +950,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -899,6 +964,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -912,6 +978,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -925,6 +992,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -938,6 +1006,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -951,6 +1020,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -964,6 +1034,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -977,6 +1048,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -990,6 +1062,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -1003,6 +1076,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -1016,6 +1090,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -1029,6 +1104,7 @@
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -1043,6 +1119,7 @@
     "man_made": "surveillance",
     "mapillary": "aC6lCMf5DlJOYCZnrDT7MQ",
     "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
@@ -1064,8 +1141,21 @@
 {
   "type": "node",
   "id": 7683260042,
-  "lat": 55.6749489,
-  "lon": 12.5869140,
+  "lat": 55.6704767,
+  "lon": 12.5784372,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Sund & Bælt",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 7849663492,
+  "lat": 55.6433209,
+  "lon": 12.5460495,
   "tags": {
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
