@@ -6,6 +6,10 @@ jobs:
   overpass-update:
     runs-on: ubuntu-latest
     steps:
+    - name: recon
+      run: |
+        ls -all
+        pwd
     - name: wget
       run: wget --post-file=query.xml -O data.json http://overpass-api.de/api/interpreter
     
