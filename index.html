@@ -48,7 +48,7 @@
 						new L.marker([el.lat, el.lon], {icon: icon_anpg, title: "Rigspolitiets ANPG"}).addTo(map);
 					}
 				}
-				if(el.tags.operator == "Sund & Bælt"){
+				else if(el.tags.operator == "Sund & Bælt"){
 					if(el.tags.active == "no"){
 						new L.marker([el.lat, el.lon], {icon: icon_miljo_notactive, title: "Sund & Bælt Holding ANPR (miljøzone, nedtaget)"}).addTo(map);
 					}else{
