@@ -1,9 +1,9 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.56.9 76e5016d",
+  "generator": "Overpass API 0.7.57.2 48842a1b",
   "osm3s": {
-    "timestamp_osm_base": "2021-05-07T08:06:13Z",
-    "timestamp_areas_base": "2021-05-07T07:00:58Z",
+    "timestamp_osm_base": "2022-05-21T19:49:51Z",
+    "timestamp_areas_base": "2022-05-21T19:18:14Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -653,8 +653,8 @@
 {
   "type": "node",
   "id": 5277904660,
-  "lat": 54.8032371,
-  "lon": 9.2902728,
+  "lat": 54.8045348,
+  "lon": 9.2910812,
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
@@ -1301,8 +1301,8 @@
 {
   "type": "node",
   "id": 7978668774,
-  "lat": 56.1456849,
-  "lon": 10.1926873,
+  "lat": 56.1456924,
+  "lon": 10.1926819,
   "tags": {
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
@@ -1347,6 +1347,246 @@
     "mapillary": "nO47Qbdj7NvTf6IctggBVn",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9016357822,
+  "lat": 55.4256996,
+  "lon": 10.3926346,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Odense Renovatopm A/S",
+    "surveillance": "checkpoint",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 9016357823,
+  "lat": 55.4257553,
+  "lon": 10.3928182,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Odense Renovation A/S",
+    "surveillance": "checkpoint",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 9760043133,
+  "lat": 55.5043740,
+  "lon": 12.1762864,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760085077,
+  "lat": 55.8664944,
+  "lon": 9.7651746,
+  "tags": {
+    "active": "no",
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760086663,
+  "lat": 55.4113535,
+  "lon": 10.0511064,
+  "tags": {
+    "active": "no",
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760087014,
+  "lat": 55.5421108,
+  "lon": 12.1736862,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760097314,
+  "lat": 55.6014019,
+  "lon": 12.2997375,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760101463,
+  "lat": 56.1482098,
+  "lon": 9.7246282,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760101464,
+  "lat": 56.1462675,
+  "lon": 9.7987903,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760117258,
+  "lat": 55.7927530,
+  "lon": 9.6705441,
+  "tags": {
+    "active": "no",
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760119169,
+  "lat": 55.4925363,
+  "lon": 9.8186349,
+  "tags": {
+    "active": "no",
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760161070,
+  "lat": 56.2785870,
+  "lon": 9.7102605,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760161071,
+  "lat": 56.2782926,
+  "lon": 9.7105885,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760161246,
+  "lat": 56.8986971,
+  "lon": 9.8226230,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760161247,
+  "lat": 56.8875883,
+  "lon": 9.8100477,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760177964,
+  "lat": 55.9281041,
+  "lon": 9.1640131,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9760216287,
+  "lat": 55.1319450,
+  "lon": 11.9348661,
+  "tags": {
+    "description": "Weigh-In-Motion system",
+    "man_made": "surveillance",
+    "operator": "Vejdirektoratet",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
