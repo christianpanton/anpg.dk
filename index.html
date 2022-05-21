@@ -31,10 +31,14 @@
 		});
 		map.addLayer(layer);
 		
-		var icon_anpg = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
-		var icon_anpg_notactive = L.MakiMarkers.icon({icon: "police", color: "#666", size: "s"});
+		var icon_rp = L.MakiMarkers.icon({icon: "police", color: "#f00", size: "m"});
+		var icon_rp_notactive = L.MakiMarkers.icon({icon: "police", color: "#666", size: "s"});
+
 		var icon_miljo = L.MakiMarkers.icon({icon: "park", color: "#cf0", size: "m"});
 		var icon_miljo_notactive = L.MakiMarkers.icon({icon: "park", color: "#666", size: "s"});
+
+		var icon_wim = L.MakiMarkers.icon({icon: "road-accident", color: "#00B8E1", size: "m"});
+		var icon_wim_notactive = L.MakiMarkers.icon({icon: "road-accident", color: "#666", size: "s"});
 
 		var icon_unknown = L.MakiMarkers.icon({icon: "star", color: "#666", size: "s"});
 
@@ -43,16 +47,24 @@
 				var el = data.elements[i];
 				if(el.tags.operator == "Rigspolitiet"){
 					if(el.tags.active == "no"){
-						new L.marker([el.lat, el.lon], {icon: icon_anpg_notactive, title: "Rigspolitiets ANPG (nedtaget)"}).addTo(map);
+						new L.marker([el.lat, el.lon], {icon: icon_rp_notactive, title: "Rigspolitiets ANPG (ikke aktivt)"}).addTo(map);
 					}else{
-						new L.marker([el.lat, el.lon], {icon: icon_anpg, title: "Rigspolitiets ANPG"}).addTo(map);
+						new L.marker([el.lat, el.lon], {icon: icon_rp, title: "Rigspolitiets ANPG"}).addTo(map);
 					}
 				}
 				else if(el.tags.operator == "Sund & Bælt"){
 					if(el.tags.active == "no"){
-						new L.marker([el.lat, el.lon], {icon: icon_miljo_notactive, title: "Sund & Bælt Holding ANPR (miljøzone, nedtaget)"}).addTo(map);
+						new L.marker([el.lat, el.lon], {icon: icon_miljo_notactive, title: "Sund & Bælt Holding ANPR (miljøzone, ikke aktivt)"}).addTo(map);
 					}else{
 						new L.marker([el.lat, el.lon], {icon: icon_miljo, title: "Sund & Bælt Holding ANPR (miljøzone)"}).addTo(map);
+					}
+				
+				}
+				else if(el.tags.operator == "Vejdirektoratet" && el.tags.description.toLowerCase().includes("weigh-in-motion")){
+					if(el.tags.active == "no"){
+						new L.marker([el.lat, el.lon], {icon: icon_wim_notactive, title: "Vejdirektoratet ANPR (Weigh-in-Motion, ikke aktivt)"}).addTo(map);
+					}else{
+						new L.marker([el.lat, el.lon], {icon: icon_wim, title: "Vejdirektoratet ANPR (Weigh-in-Motion)"}).addTo(map);
 					}
 				
 				}else{
