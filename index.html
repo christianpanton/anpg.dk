@@ -37,6 +37,9 @@
 		var icon_miljo = L.MakiMarkers.icon({icon: "park", color: "#cf0", size: "m"});
 		var icon_miljo_notactive = L.MakiMarkers.icon({icon: "park", color: "#666", size: "s"});
 
+		var icon_ssc = L.MakiMarkers.icon({icon: "racetrack", color: "#FDDA0D", size: "m"});
+		var icon_ssc_notactive = L.MakiMarkers.icon({icon: "racetrack", color: "#666", size: "s"});
+
 		var icon_wim = L.MakiMarkers.icon({icon: "road-accident", color: "#00B8E1", size: "m"});
 		var icon_wim_notactive = L.MakiMarkers.icon({icon: "road-accident", color: "#666", size: "s"});
 
@@ -51,6 +54,14 @@
 					}else{
 						new L.marker([el.lat, el.lon], {icon: icon_rp, title: "Rigspolitiets ANPG"}).addTo(map);
 					}
+				}
+				else if(el.tags.description.toLowerCase().includes("section speed control")){
+					if(el.tags.active == "no"){
+						new L.marker([el.lat, el.lon], {icon: icon_ssc_notactive, title: "Strækningskontrol (ikke aktivt)"}).addTo(map);
+					}else{
+						new L.marker([el.lat, el.lon], {icon: icon_ssc, title: "Strækningskontrol"}).addTo(map);
+					}
+				
 				}
 				else if(el.tags.operator == "Sund & Bælt"){
 					if(el.tags.active == "no"){
