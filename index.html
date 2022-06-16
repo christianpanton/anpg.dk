@@ -55,7 +55,7 @@
 						new L.marker([el.lat, el.lon], {icon: icon_rp, title: "Rigspolitiets ANPG"}).addTo(map);
 					}
 				}
-				else if(el.tags.description.toLowerCase().includes("section speed control")){
+				else if(el.tags.description !== null && el.tags.description.toLowerCase().includes("section speed control")){
 					if(el.tags.active == "no"){
 						new L.marker([el.lat, el.lon], {icon: icon_ssc_notactive, title: "Strækningskontrol (ikke aktivt)"}).addTo(map);
 					}else{
