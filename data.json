@@ -1,9 +1,9 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.57 93a4d346",
+  "generator": "Overpass API 0.7.58.2 2b5354b1",
   "osm3s": {
-    "timestamp_osm_base": "2022-05-24T06:10:09Z",
-    "timestamp_areas_base": "2022-05-24T05:37:04Z",
+    "timestamp_osm_base": "2022-06-16T20:42:26Z",
+    "timestamp_areas_base": "2022-06-16T20:07:43Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1587,6 +1587,110 @@
     "description": "Weigh-In-Motion system",
     "man_made": "surveillance",
     "operator": "Vejdirektoratet",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541011,
+  "lat": 55.2996558,
+  "lon": 10.8521224,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541012,
+  "lat": 55.2994554,
+  "lon": 10.8522087,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541013,
+  "lat": 55.3393681,
+  "lon": 11.0148606,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541014,
+  "lat": 55.3391406,
+  "lon": 11.0149435,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541015,
+  "lat": 55.3447055,
+  "lon": 11.0564368,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823541016,
+  "lat": 55.3444855,
+  "lon": 11.0565223,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823580917,
+  "lat": 55.3495873,
+  "lon": 11.0980633,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9823580918,
+  "lat": 55.6099149,
+  "lon": 12.7294961,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
