@@ -1,9 +1,9 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.58.2 2b5354b1",
+  "generator": "Overpass API 0.7.58.3 b33c3320",
   "osm3s": {
-    "timestamp_osm_base": "2022-06-16T20:42:26Z",
-    "timestamp_areas_base": "2022-06-16T20:07:43Z",
+    "timestamp_osm_base": "2022-06-30T09:06:27Z",
+    "timestamp_areas_base": "2022-06-30T07:36:24Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1688,6 +1688,45 @@
   "id": 9823580918,
   "lat": 55.6099149,
   "lon": 12.7294961,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9857572597,
+  "lat": 55.6097436,
+  "lon": 12.7293021,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9857572598,
+  "lat": 55.6311299,
+  "lon": 12.6773520,
+  "tags": {
+    "description": "Section Speed Control",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 9857572599,
+  "lat": 55.6311779,
+  "lon": 12.6774010,
   "tags": {
     "description": "Section Speed Control",
     "man_made": "surveillance",
