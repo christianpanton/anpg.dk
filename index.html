@@ -23,8 +23,14 @@
 	</div>
 
 	<script>
-		var layer = new L.StamenTileLayer("toner");
-		layer.setUrl("https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png");
+
+		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x.png' : '.png'), {
+			attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+			subdomains: 'abcd',
+			maxZoom: 20,
+			minZoom: 0
+		});
+
 		var map = new L.Map("map", {
 		    center: new L.LatLng(56, 10),
 		    zoom: 7
