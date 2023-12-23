@@ -110,6 +110,7 @@
 				if(el.tags.active == "no"){
 					options.title += " (ikke aktiv)";
 					options.opacity = 0.5;
+					options.fillOpacity = 0;
 				}
 
 				L.circle(loc, 50, options).addTo(map);
