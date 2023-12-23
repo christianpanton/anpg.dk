@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.61.5 4133829e",
   "osm3s": {
-    "timestamp_osm_base": "2023-11-27T17:23:00Z",
-    "timestamp_areas_base": "2023-11-27T13:37:43Z",
+    "timestamp_osm_base": "2023-12-23T14:32:29Z",
+    "timestamp_areas_base": "2023-12-23T10:52:52Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1236,9 +1236,10 @@
 {
   "type": "node",
   "id": 7978621438,
-  "lat": 56.1503535,
-  "lon": 10.2099999,
+  "lat": 56.1503696,
+  "lon": 10.2100224,
   "tags": {
+    "direction": "160",
     "man_made": "surveillance",
     "operator": "Sund & Bælt",
     "surveillance": "public",
@@ -1821,10 +1822,11 @@
 {
   "type": "node",
   "id": 11358007137,
-  "lat": 56.9977480,
-  "lon": 9.2970465,
+  "lat": 57.0009872,
+  "lon": 9.2911059,
   "tags": {
     "man_made": "surveillance",
+    "mapillary:image": "851485823433887",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
     "surveillance": "public",
@@ -1897,6 +1899,19 @@
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 11435895740,
+  "lat": 56.1503790,
+  "lon": 10.2099671,
+  "tags": {
+    "direction": "35",
+    "man_made": "surveillance",
     "surveillance": "public",
     "surveillance:type": "ALPR",
     "surveillance:zone": "traffic"
