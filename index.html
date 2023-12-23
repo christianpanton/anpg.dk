@@ -86,6 +86,7 @@
 				const options = {
 					color: '#2E4057',
 					fillOpacity: 0.5,
+					opacity: 0.9,
 					radius: 50,
 					title: "Ikke kategoriseret"
 				};
@@ -109,7 +110,8 @@
 
 				if(el.tags.active == "no"){
 					options.title += " (ikke aktiv)";
-					options.opacity = 0.5;
+					options.opacity = 0.3;
+					options.dashArray="4 8";
 					options.fillOpacity = 0;
 				}
 
