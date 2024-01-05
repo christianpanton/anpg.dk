@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.61.5 4133829e",
   "osm3s": {
-    "timestamp_osm_base": "2024-01-04T08:24:29Z",
-    "timestamp_areas_base": "2024-01-04T07:02:06Z",
+    "timestamp_osm_base": "2024-01-05T11:27:26Z",
+    "timestamp_areas_base": "2024-01-05T08:17:59Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1964,6 +1964,20 @@
   "id": 11485673001,
   "lat": 55.1902924,
   "lon": 10.5283503,
+  "tags": {
+    "man_made": "surveillance",
+    "operator": "Rigspolitiet",
+    "operator:wikidata": "Q3756751",
+    "surveillance": "public",
+    "surveillance:type": "ALPR",
+    "surveillance:zone": "traffic"
+  }
+},
+{
+  "type": "node",
+  "id": 11491426784,
+  "lat": 54.9215296,
+  "lon": 9.7604693,
   "tags": {
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
