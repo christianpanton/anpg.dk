@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="leaflet.css" />
 	<meta charset="utf-8">
-	<script src="app.js"></script>
+	<script src="leaflet.js"></script>
+	<script src="jquery-3.7.1.min.js"></script>
 	<style>
 		body {
 			padding: 0;
@@ -48,6 +49,8 @@
 
 	<script>
 
+		var searchParams = new URLSearchParams(window.location.search);
+
 		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x.png' : '.png'), {
 			attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
@@ -59,6 +62,8 @@
 		    center: new L.LatLng(56, 10),
 		    zoom: 7
 		});
+
+		map.attributionControl.setPrefix(false);
 
 		map.addLayer(layer);
 
@@ -76,6 +81,17 @@
 
 		legend.addTo(map);
 
+		if(searchParams.has('statsveje'))
+		{
+			var statsvejStyle = {
+				"color": "#DA4167",
+				"weight": 1,
+				"opacity": 0.4
+			}; 
+			$.getJSON("statsveje.geojson", function(data) {
+				L.geoJSON(data, {style: statsvejStyle}).addTo(map);
+			});
+		}
 
 		$.getJSON("data.json?" + (new Date).getTime(), function(data){
 			for(var i = 0; i < data.elements.length; i++){
@@ -118,6 +134,9 @@
 				L.circle(loc, 50, options).addTo(map);
 			}
 		});
+
+
+	
 	</script>
 </body>
 </html>
