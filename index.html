@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANPG | Automatisk Nummerpladegenkendelse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="leaflet.css" />
+	<meta charset="utf-8">
+	<script src="leaflet.js"></script>
+	<script src="jquery-3.7.1.min.js"></script>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: Helvetica, sans-serif;
+		}
+		html, body, #map {
+			height: 100%;
+		}
+
+		.legend {
+			padding: 6px 8px;
+			font: 13px Arial, Helvetica, sans-serif;
+			background: white;
+			background: rgba(255, 255, 255, 0.8);
+			line-height: 24px;
+			color: #555;
+		}
+		
+		.legend span {
+			position: relative;
+			bottom: 3px;
+		}
+
+		.legend i {
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin: 0 8px 0 0;
+			opacity: 0.7;
+			border-radius: 9px;
+		}
+
+	</style>
+	</head>
+	<body>
+	
+	<div id="map">
+	</div>
+
+	<script>
+
+		var searchParams = new URLSearchParams(window.location.search);
+
+		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Browser.retina ? '@2x.png' : '.png'), {
+			attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+			subdomains: 'abcd',
+			maxZoom: 20,
+			minZoom: 0
+		});
+
+		var map = new L.Map("map", {
+		    center: new L.LatLng(56, 10),
+		    zoom: 7
+		});
+
+		map.attributionControl.setPrefix(false);
+
+		map.addLayer(layer);
+
+		var legend = L.control({ position: "bottomleft" });
+
+		legend.onAdd = function(map) {
+			var div = L.DomUtil.create("div", "legend");
+			div.innerHTML += '<i style="background: #DA4167"></i><span>Rigspolitiets ANPG</span><br>';
+			div.innerHTML += '<i style="background: #F4D35E"></i><span>Sund & Bælt Strækningskontrol</span><br>';
+			div.innerHTML += '<i style="background: #85CB33"></i><span>Sund & Bælt Miljøzone</span><br>';
+			div.innerHTML += '<i style="background: #083D77"></i><span>Vejdirektoratet Weigh-in-Motion</span><br>';
+			div.innerHTML += '<i style="background: #2E4057"></i><span>Ikke kategoriseret</span><br>';
+			return div;
+		};
+
+		legend.addTo(map);
+
+		if(searchParams.has('statsveje'))
+		{
+			var statsvejStyle = {
+				"color": "#DA4167",
+				"weight": 1,
+				"opacity": 0.4
+			}; 
+			$.getJSON("statsveje.geojson", function(data) {
+				L.geoJSON(data, {style: statsvejStyle}).addTo(map);
+			});
+		}
+
+		$.getJSON("data.json?" + (new Date).getTime(), function(data){
+			for(var i = 0; i < data.elements.length; i++){
+
+				var el = data.elements[i];
+				var loc = L.latLng(el.lat, el.lon);
+
+				const options = {
+					color: '#2E4057',
+					fillOpacity: 0.5,
+					opacity: 0.9,
+					radius: 50,
+					title: "Ikke kategoriseret"
+				};
+
+				if(el.tags.operator == "Rigspolitiet"){
+					options.color = '#DA4167';
+					options.title = "Rigspolitiets ANPG";
+				}
+				else if(el.tags.description !== undefined && el.tags.description.toLowerCase().includes("section speed control")){
+					options.title = "Strækningskontrol";	
+					options.color = '#F4D35E';
+				}
+				else if(el.tags.operator == "Sund & Bælt"){
+					options.title = "Sund & Bælt Holding ANPR / Miljøzone";	
+					options.color = "#85CB33";
+				}
+				else if(el.tags.operator == "Vejdirektoratet" && el.tags.description.toLowerCase().includes("weigh-in-motion")){
+					options.title = "Vejdirektoratet ANPR / Weigh-in-Motion";
+					options.color = "#083D77";
+				}
+
+				if(el.tags.active == "no"){
+					options.title += " (ikke aktiv)";
+					options.opacity = 0.3;
+					options.dashArray="4 8";
+					options.fillOpacity = 0;
+				}
+
+				L.circle(loc, 50, options).addTo(map);
+			}
+		});
+
+
+	
+	</script>
+</body>
+</html>
