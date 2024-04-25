@@ -1,0 +1,18 @@
+name: Update from Overpass API
+
+on: [workflow_dispatch]
+
+jobs:
+  overpass-update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: wget
+      run: wget --post-file=query.xml -O data.json http://overpass-api.de/api/interpreter
+    - name: commit
+      run: |
+          git config --global user.name 'Christian Panton (bot)'
+          git config --global user.email 'christianpanton@users.noreply.github.com'
+          git commit -am "Update from Overpass API"
+          git push
+    
