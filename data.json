@@ -2,8 +2,8 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.1 084b4234",
   "osm3s": {
-    "timestamp_osm_base": "2024-05-27T06:25:15Z",
-    "timestamp_areas_base": "2024-05-27T02:01:45Z",
+    "timestamp_osm_base": "2024-06-15T07:36:56Z",
+    "timestamp_areas_base": "2024-06-15T04:05:00Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1850,9 +1850,11 @@
 {
   "type": "node",
   "id": 11379901073,
-  "lat": 55.3192972,
-  "lon": 8.7534195,
+  "lat": 55.3186955,
+  "lon": 8.7529545,
   "tags": {
+    "camera:mount": "pole",
+    "direction": "40",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
@@ -1864,9 +1866,11 @@
 {
   "type": "node",
   "id": 11379901074,
-  "lat": 55.3205779,
-  "lon": 8.7594048,
+  "lat": 55.3205773,
+  "lon": 8.7588727,
   "tags": {
+    "camera:mount": "pole",
+    "direction": "300",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
@@ -2157,9 +2161,11 @@
 {
   "type": "node",
   "id": 11525830492,
-  "lat": 55.5238017,
-  "lon": 8.5910233,
+  "lat": 55.5248835,
+  "lon": 8.5926914,
   "tags": {
+    "camera:mount": "pole",
+    "direction": "235",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
@@ -2185,9 +2191,11 @@
 {
   "type": "node",
   "id": 11525830494,
-  "lat": 55.5215460,
-  "lon": 8.5889112,
+  "lat": 55.5214535,
+  "lon": 8.5887540,
   "tags": {
+    "camera:mount": "pole",
+    "direction": "30",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
@@ -2199,9 +2207,11 @@
 {
   "type": "node",
   "id": 11525830495,
-  "lat": 55.5218833,
-  "lon": 8.5900951,
+  "lat": 55.5217529,
+  "lon": 8.5903580,
   "tags": {
+    "camera:mount": "pole",
+    "direction": "310",
     "man_made": "surveillance",
     "operator": "Rigspolitiet",
     "operator:wikidata": "Q3756751",
