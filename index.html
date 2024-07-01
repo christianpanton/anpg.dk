@@ -91,7 +91,7 @@
 			var div = L.DomUtil.create("div", "legend");
 			div.innerHTML += '<i style="background: #DA4167"></i><span>Rigspolitiets ANPG</span><br>';
 			div.innerHTML += '<i style="background: #F4D35E"></i><span>Sund & Bælt Strækningskontrol</span><br>';
-			div.innerHTML += '<i style="background: #85CB33"></i><span>Sund & Bælt Miljøzone</span><br>';
+			div.innerHTML += '<i style="background: #85CB33"></i><span>Sund & Bælt Miljøzone/Vejafgifter</span><br>';
 			div.innerHTML += '<i style="background: #083D77"></i><span>Vejdirektoratet Weigh-in-Motion</span><br>';
 			div.innerHTML += '<i style="background: #2E4057"></i><span>Ikke kategoriseret</span><br>';
 			return div;
@@ -134,7 +134,7 @@
 					options.color = '#F4D35E';
 				}
 				else if(el.tags.operator == "Sund & Bælt"){
-					options.title = "Sund & Bælt Holding ANPR / Miljøzone";	
+					options.title = "Sund & Bælt Holding ANPR / Miljøzone / Vejafgifter";	
 					options.color = "#85CB33";
 				}
 				else if(el.tags.operator == "Vejdirektoratet" && el.tags.description.toLowerCase().includes("weigh-in-motion")){
